@@ -1,0 +1,5 @@
+[env]
+mise.file = ".env"
+
+[tools]
+python = "3.11.7"
