@@ -19,7 +19,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print('------')
-    await bot.change_presence(activity=discord.Game(name='功能請見"command list"', type=1))
+    await bot.change_presence(activity=discord.Game(name='playing...', type=1))
     await bot.tree.sync()
 
 @bot.tree.command(name="cal",description="Basic calculation")
