@@ -1,6 +1,6 @@
 # markbot
 
-A small Discord bot for mathematic calculations.
+An actually maintained, small discord bot - or say, a starter template for basic mathematic calculation using `discord.py`.
 
 ## Directory architecture
 
@@ -8,46 +8,65 @@ A small Discord bot for mathematic calculations.
 ├── .gitignore
 ├── LICENSE
 ├── main.py       # Main code
-├── .mise.toml    # mise-rtx specific configuration
+├── .mise.toml    
 ├── README.md
 ├── requirements.txt
-├── start.bat     # Start script for windows
 ```
 
+## Prerequisites
+- `python 3.10` or above.
 ## Installation
 
+1. Create a new Discord bot and obtain the bot token. 
+   - If you have no idea how to recreate this step, you may follow  [#1.Introduction To Discord.py](https://dev.to/mannu/1-introduction-to-discordpy-3c3j).
 1. Clone the repository:
    ```bash
-   https://github.com/seannnnnn-n/MarkBot-public-
+   $ git clone https://github.com/seannnnnn-n/markbot-public
    ```
-2. Install the required dependencies:
+1. Create `virtualenv` (Optional, but recommended)
    ```bash
-   pip install -r requirements.txt
+   $ mkdir -p .venv 
+   $ python -m venv /path/to/this/repository/.venv
    ```
-
-## Usage
-
-1. Create a new Discord bot and obtain the bot token.
-2. Replace `YOUR_BOT_TOKEN` with your actual bot token.
-3. Run the bot:
+1. Activate `virtualenv` ( If you skipped step 3, this process is unnecessary)
+   - For Windows
+   ```
+   $ .venv\bin\Activate.ps1
+   ```
+   - For Mac
+   ```
+   $ source .venv/bin/activate
+   ```
+   - For Linux or WSL
+   ```
+   $ .venv/bin/activate
+   ```
+   - Or, if you are using `fish shell`
+   ```
+   $ .venv/bin/activate.fish
+   ```
+1. Install the required dependencies:
    ```bash
-   python main.py
+   $ pip install -r requirements.txt
+   ```
+1. Run `main.py`
+   ```
+   $ python main.py
    ```
 
 ## Features
 
-- Perform basic mathematical calculations.
-- Respond to specific commands in Discord.
+- [x] Perform basic mathematical calculations, using slash command interface.
 
 ## Contributing
 
-Contributions are limited currently.
+Contributions are welcome! Feel free to open an issue to discuss anything, or submit a PR:)
 
 ### Code of Conduct
 
-Please follow [Semantic commit message guides](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) whlie writing commit message.
+Please follow [Semantic commit message guides](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716) while writing commit message.
 
-Here is a quick explanation of it :
+Here is a quick recap of it :
 
 ```
 feat: (new feature for the user, not a new feature for build script)
