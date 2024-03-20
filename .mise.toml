@@ -1,5 +1,5 @@
+[tools]
+python = {version='3.11.7', virtualenv='.venv/bin/activate.fish'}
+
 [env]
 mise.file = ".env"
-
-[tools]
-python = "3.11.7"
