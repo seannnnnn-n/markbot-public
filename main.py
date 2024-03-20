@@ -1,7 +1,6 @@
 # imports
 import statistics
 import math
-from translate import Translator
 
 # discord imports
 import discord
@@ -104,16 +103,6 @@ async def cal(interaction:discord.Interaction, fib_input:str):
 async def cal(interaction:discord.Interaction,log_input:int):
         ans = "```" + str(math.log10(log_input)) + "```"
         await interaction.response.send_message(ans)
-
-@bot.tree.command(name="translate",description="Translate English to Chinese")
-async def cal(interaction:discord.Interaction,translate_input:str):
-        translator= Translator(to_lang="zh")
-        translation = translator.translate(translate_input)
-        if translation == translate_input and translate_input != "fuck":
-            await interaction.response.send_message("cant translate")
-        else:
-            ans = translate_input + " -> " + translation
-            await interaction.response.send_message(ans)
 
 @bot.tree.command(name="sig",description="Calculate properties of a linear regression between two given numbers.")
 async def cal(interaction:discord.Interaction, sig_input:str):
